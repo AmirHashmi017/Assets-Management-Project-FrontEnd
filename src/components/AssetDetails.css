@@ -1,0 +1,85 @@
+/* General Styles */
+.asset-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 90vh;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Card Styles */
+  .asset-card {
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .asset-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .asset-info strong {
+    color: #333;
+  }
+  
+  .asset-document {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .asset-document p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Button Styles */
+  .upload-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Not Found Page */
+  .asset-not-found {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .asset-not-found h1 {
+    font-size: 2rem;
+    color: #d9534f;
+    margin-bottom: 10px;
+  }
+  
+  .asset-not-found p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
