@@ -7,6 +7,7 @@ import Workstation from "./components/Workstation";
 import ProductsCRUD from "./components/ProductCRUD";
 
 import "./index.css";
+import CustomerCRUD from "./components/CustomerCRUD";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/asset/:id" element={<AssetDetails />} />
           <Route path="/scan" element={<Scan />} />
           <Route path="/productscrud" element={<ProductsCRUD />} />
+          <Route path="customerCrud" element={<CustomerCRUD />} />
         </Routes>
       </div>
     </Router>

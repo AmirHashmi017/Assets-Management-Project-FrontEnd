@@ -7,9 +7,10 @@ const Dashboard = () => {
   const [search, setSearch] = useState("");
 
   // Filter assets based on search term (ID or name)
-  const filteredAssets = assets.filter((asset) =>
-    asset.id.toLowerCase().includes(search.toLowerCase()) ||
-    asset.name.toLowerCase().includes(search.toLowerCase())
+  const filteredAssets = assets.filter(
+    (asset) =>
+      asset.id.toLowerCase().includes(search.toLowerCase()) ||
+      asset.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
@@ -27,9 +28,15 @@ const Dashboard = () => {
           filteredAssets.map((asset) => (
             <div key={asset.id} className="asset-card">
               <h3>{asset.name}</h3>
-              <p><strong>ID:</strong> {asset.id}</p>
-              <p><strong>Status:</strong> {asset.status}</p>
-              <p><strong>Location:</strong> {asset.location}</p>
+              <p>
+                <strong>ID:</strong> {asset.id}
+              </p>
+              <p>
+                <strong>Status:</strong> {asset.status}
+              </p>
+              <p>
+                <strong>Location:</strong> {asset.location}
+              </p>
               <Link to={`/asset/${asset.id}`} className="details-link">
                 View Details
               </Link>
@@ -40,8 +47,11 @@ const Dashboard = () => {
         )}
       </div>
       <div className="dashboard-buttons">
-      <Link to="/productscrud">
+        <Link to="/productscrud">
           <button className="btn">Manage Assets</button>
+        </Link>
+        <Link to="/customerCrud">
+          <button className="btn">Manage Customers</button>
         </Link>
         <Link to="/workstation">
           <button className="btn">Workstations</button>
@@ -49,7 +59,6 @@ const Dashboard = () => {
         <Link to="/scan">
           <button className="btn">Scan QR Code</button>
         </Link>
-        
       </div>
     </div>
   );
