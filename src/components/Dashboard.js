@@ -50,6 +50,9 @@ const Dashboard = () => {
         <Link to="/productscrud">
           <button className="btn">Manage Assets</button>
         </Link>
+        <Link to="/providerCrud">
+          <button className="btn">Manage Providers</button>
+        </Link>
         <Link to="/customerCrud">
           <button className="btn">Manage Customers</button>
         </Link>

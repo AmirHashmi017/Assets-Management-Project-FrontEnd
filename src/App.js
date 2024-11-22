@@ -8,6 +8,7 @@ import ProductsCRUD from "./components/ProductCRUD";
 
 import "./index.css";
 import CustomerCRUD from "./components/CustomerCRUD";
+import ProviderCRUD from "./components/ProviderCRUD";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/scan" element={<Scan />} />
           <Route path="/productscrud" element={<ProductsCRUD />} />
           <Route path="customerCrud" element={<CustomerCRUD />} />
+          <Route path="providerCrud" element={<ProviderCRUD />} />
         </Routes>
       </div>
     </Router>
