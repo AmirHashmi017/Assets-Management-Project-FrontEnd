@@ -40,8 +40,8 @@ const Dashboard = () => {
         )}
       </div>
       <div className="dashboard-buttons">
-      <Link to="/addproducts">
-          <button className="btn">Add Asset</button>
+      <Link to="/productscrud">
+          <button className="btn">Manage Assets</button>
         </Link>
         <Link to="/workstation">
           <button className="btn">Workstations</button>

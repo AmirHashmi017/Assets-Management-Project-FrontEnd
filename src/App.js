@@ -4,7 +4,7 @@ import AssetDetails from "./components/AssetDetails";
 import Dashboard from "./components/Dashboard";
 import Scan from "./components/Scan";
 import Workstation from "./components/Workstation";
-import AddProducts from "./components/AddProducts";
+import ProductsCRUD from "./components/ProductCRUD";
 
 import "./index.css";
 
@@ -17,7 +17,7 @@ function App() {
           <Route path="/workstation" element={<Workstation />} />
           <Route path="/asset/:id" element={<AssetDetails />} />
           <Route path="/scan" element={<Scan />} />
-          <Route path="/addproducts" element={<AddProducts />} />
+          <Route path="/productscrud" element={<ProductsCRUD />} />
         </Routes>
       </div>
     </Router>
