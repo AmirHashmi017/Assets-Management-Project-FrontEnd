@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ProductCrud.css";
 import axios from "axios";
+import Navbar from './Navbar';
 
 const ProductCRUD = () => {
   const [users, setUsers] = useState([]);
@@ -148,6 +149,7 @@ const ProductCRUD = () => {
   );
   
   return (
+    <div><Navbar />
     <div className="crud-container">
       <h1>Product Management</h1>
       <div className="searchandbutton">
@@ -317,6 +319,7 @@ const ProductCRUD = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

@@ -1,0 +1,30 @@
+*
+{
+    user-select: none;
+    
+    
+}
+.navbar
+{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    position: relative;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu
+  {
+      border-radius: 15px !important;
+  }
+  .dropdown-menu li a:hover
+  {
+      color:red !important;
+  }
+  .dropdown-menu li a {
+  
+    left: 0 !important;
+    right: auto !important;
+    text-align: left !important; 
+  
+  }

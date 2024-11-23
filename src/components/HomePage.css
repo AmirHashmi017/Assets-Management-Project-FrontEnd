@@ -1,0 +1,11 @@
+*
+{
+    user-select: none;
+}
+#home {
+    user-select: none;
+
+    width:101vw;
+    position: relative;
+    left:-20px ! important;
+}

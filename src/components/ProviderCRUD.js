@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./ProviderCRUD.css";
+import Navbar from './Navbar';
 
 const BASE_URL = "http://localhost:3000/api";
 const ProviderCRUD = () => {
@@ -96,6 +97,7 @@ const ProviderCRUD = () => {
   );
 
   return (
+    <div><Navbar />
     <div className="crud-container">
       <h1>Provider Management</h1>
       <div className="searchandbutton">
@@ -179,6 +181,7 @@ const ProviderCRUD = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

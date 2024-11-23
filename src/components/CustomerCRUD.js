@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./CustomerCRUD.css";
+import Navbar from './Navbar';
 
 const BASE_URL = "http://localhost:3000/api";
 const CustomerCRUD = () => {
@@ -35,12 +36,13 @@ const CustomerCRUD = () => {
   const handleAddCustomer = async () => {
     try {
       const response = await axios.post(`${BASE_URL}/customers`, form);
-      setCustomers([...customers, response.data]);
+      fetchCustomers();
       setForm({ customerName: "", customerAddress: "" });
       closeForm();
     } catch (error) {
       console.error("Error adding customer:", error);
     }
+
   };
 
   const handleEditCustomer = (customer) => {
@@ -96,6 +98,7 @@ const CustomerCRUD = () => {
   );
 
   return (
+    <div><Navbar />
     <div className="crud-container">
       <h1>Customer Management</h1>
       <div className="searchandbutton">
@@ -179,6 +182,7 @@ const CustomerCRUD = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };
